@@ -1,0 +1,94 @@
+@import url('https://api.fontshare.com/v2/css?f[]=stardom@400&display=swap');
+@import url('https://api.fontshare.com/v2/css?f[]=satoshi@700&display=swap');
+
+:root {
+    --clr-dark: #211a12;
+    --clr-light: #f4f0eb;
+}
+
+body{
+    display: flow-root;
+
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+
+    background-color: var(--clr-dark);
+    scroll-snap-type: y mandatory;
+    
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+    width: 100%;
+}
+
+#mainHeader{
+    margin: 0px;
+    padding: 0px;
+    flex-shrink: 0;
+    align-self: flex-start;
+
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    height: 60px;
+
+}
+
+#menuBar{
+    width: 20px;
+    height: auto;
+
+    margin-right: 30px;
+}
+
+
+#websiteTitle{
+    font-size: clamp(0.9375rem, 1.5vw + 1rem, 1.25rem);
+    font-family: 'Stardom', sans-serif;
+    color: #fcfbfa;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+
+    width: 80%;
+    max-width: 400px;
+
+    height: 80%;
+    max-height: 500px;
+
+    background-color: #31261c;
+    border-radius: 0.5rem;
+}
+
+#text_item{
+    width: 100%;
+    height: 100px;
+
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#text_item a{
+    align-self: center;
+
+    color: #fff;
+    font-size: 0.9375rem;
+    font-family: 'Satoshi', sans-serif;
+    font-weight: 662;
+    text-decoration: none;
+    text-shadow: none;
+}
