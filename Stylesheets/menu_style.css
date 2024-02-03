@@ -2,8 +2,8 @@
 @import url('https://api.fontshare.com/v2/css?f[]=satoshi@700&display=swap');
 
 :root {
-    --clr-dark: #211a12;
-    --clr-light: #f4f0eb;
+    --clr-dark: #16110b;
+    --clr-light: #fbf4e7;
 }
 
 body{
@@ -13,7 +13,7 @@ body{
     margin: 0px;
     padding: 0px;
 
-    background-color: var(--clr-dark);
+    background-color: var(--clr-light);
     scroll-snap-type: y mandatory;
     
 }
@@ -53,6 +53,8 @@ main{
 
 
 #websiteTitle{
+    margin-left: 1rem;
+
     font-size: clamp(0.9375rem, 1.5vw + 1rem, 1.25rem);
     font-family: 'Stardom', sans-serif;
     color: #fcfbfa;
