@@ -379,7 +379,7 @@ body{
 }
 
 .introductionText p {
-    font-size: 1.5625rem;
+    font-size: 1.25rem;
 }
 
 #aboutUsBlock {
@@ -414,7 +414,7 @@ body{
     width: 100%;
     height: 100%;
 
-    padding: 0 50px;
+    /*padding: 0 clamp(1.563rem, 2.5rem, 3.125rem);*/
 
     display: flex;
     gap: 2rem;
@@ -435,11 +435,11 @@ body{
 .storySectionText p {
     color: #f0ece7;
     font-family: 'Albert Sans', sans-serif;
-    font-size: 1.5625rem;
+    font-size: 1.25rem;
 }
 
 #environmentText {
-    font-size: 1.5625rem;
+    font-size: 1.25rem;
     margin-top: 3.125rem;
 }
 
@@ -524,8 +524,8 @@ body{
     font-size: 1.25rem;
     font-family: 'Albert Sans', sans-serif;
 
-    margin-left: 3.125rem;
-    margin-right: 3.125rem;
+    margin-left: clamp(1.563rem, 2.5rem, 3.125rem);
+    margin-right: clamp(1.563rem, 2.5rem, 3.125rem);
 
     line-height: 2.0;
 }
@@ -657,8 +657,11 @@ footer{
     color: #fff;
 }
 
-#product img {
+#productImage {
     border-radius: 0.5rem;
+    width: 100%;
+    height: 20%;
+    object-fit: contain;
 }
 
 #product section {
@@ -713,12 +716,10 @@ footer{
         */
     }
 
-    #product img {
-        aspect-ratio: 16 / 9;
-        object-fit: cover;
-
+    #productImage {
+        object-fit: contain;
         width: 50%;
-        height: 100%;
+        height: 50%;
     }
     
     .block{
