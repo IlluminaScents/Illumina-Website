@@ -187,6 +187,7 @@ body{
     border-radius: 0.5rem;
 
     object-fit: cover;
+    object-position: center;
     aspect-ratio: 16 / 9;
     height: 100%;
     width: 100%;
@@ -282,12 +283,11 @@ body{
     width: 100%;
     height: auto;
 
-    background: rgb(49,38,28);
-    background: linear-gradient(90deg, rgba(49,38,28,1) 0%, rgba(57,46,36,1) 100%);
+    background: none;
 
     overflow: hidden;
 
-    box-shadow: 7px 7px 2px #2b2119;
+    box-shadow: none;
 }
 
 .introductionText {
@@ -367,10 +367,11 @@ body{
 }
 
 #environmentText {
-    font-size: 1.25rem;
+    color: #20252e;
     font-family: "Cormorant Garamond", serif;
     font-weight: 500;
     font-style: normal;
+    font-size: 1.25rem;
     margin-top: 3.125rem;
 }
 
@@ -386,20 +387,8 @@ body{
     justify-content: center;
     align-items: center;
     text-align: cente;
-}
 
-.secondBlock{
-    border-radius: 0.5rem;
-    
-    background: rgb(49,38,28);
-    background: linear-gradient(90deg, rgba(49,38,28,1) 0%, rgba(57,46,36,1) 100%);
-
-    overflow: hidden;
-    margin: 0px;
-    width: 100%;
-    height: auto;
-
-    box-shadow: 7px 7px 2px #2b2119;
+    background: none;
 }
 
 .image{
