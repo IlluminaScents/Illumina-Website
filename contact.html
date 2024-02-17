@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="The contact section of the Illumina Scents & Sounds company." content="width=device-width, initial-scale=1.0">
+    <meta name="The contact section of the Illumina Scents & Sounds company." content="width=device-width, initial-scale=1">
     <title>Contact | Illumina Scents & Sounds</title>
 
     <link rel="preload" href="Stylesheets/index.css" as="style">
@@ -34,17 +34,19 @@
     </header>
 
     <main>
-        <div class="contactBlock">
-            <h1>Contact Form</h1>
-            <section>
-                <input type="text" name="First Name" placeholder="e.g. John" autocomplete="off" required>
-                <input type="text" name="Last Name" placeholder="e.g. Smith" autocomplete="off" required>
-            </section>
-            
-            <input type="email" name="Email Address" placeholder="e.g. johnsmith@email.com" autocomplete="off" required>
-            <textarea rows="5" cols="60" name="Message" placeholder="Enter Message" autocomplete="off" required></textarea>
-            <button type="submit">Submit Message</button>
-        </div>
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <div class="contactBlock">
+                <h1>Get in touch with us</h1>
+                <hr>
+
+                <input type="hidden" name="access_key" value="5c14feb3-7983-4cbf-968a-11b0027021a2">
+
+                <input type="text" name="Full Name" placeholder="e.g. John Smith" class="contact-inputs" autocomplete="off" required>
+                <input type="email" name="Email Address" placeholder="e.g. johnsmith@email.com" class="contact-inputs" autocomplete="off" required>
+                <textarea name="Message" placeholder="Enter Message" class="contact-inputs" autocomplete="off" required></textarea>
+                <button type="submit">Submit Message</button>
+            </div>
+        </form>
         
     </main>
 
