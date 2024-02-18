@@ -51,15 +51,6 @@ main{
     margin-right: 30px;
 }
 
-
-#websiteTitle{
-    margin-left: 1rem;
-
-    font-size: clamp(0.9375rem, 1.5vw + 1rem, 1.25rem);
-    font-family: 'Stardom', sans-serif;
-    color: #fcfbfa;
-}
-
 .container{
     display: flex;
     flex-direction: column;
@@ -70,7 +61,7 @@ main{
     height: 80%;
     max-height: 500px;
 
-    background-color: #31261c;
+    background-color: #fbf4e7;
     border-radius: 0.5rem;
 }
 
@@ -87,10 +78,11 @@ main{
 #text_item a{
     align-self: center;
 
-    color: #fff;
-    font-size: 0.9375rem;
-    font-family: 'Satoshi', sans-serif;
-    font-weight: 662;
+    color: #20252e;
+    font-size: 1.25rem;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 500;
+    font-style: normal;
     text-decoration: none;
     text-shadow: none;
 }

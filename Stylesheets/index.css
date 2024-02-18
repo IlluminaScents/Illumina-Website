@@ -565,68 +565,91 @@ footer{
 }
 
 /* Product Page Styles */
+.productCardContainer {
+    scroll-snap-type: x mandatory;
 
-.productContainer {
-    margin-top: 6.25rem;
-    margin-bottom: 6.25rem;
-    padding-top: 100px;
-
-    display: flex;
-    flex-direction: column;
-    gap: 10rem;
-
-    width: 100%;
-    height: 100%;
-}
-
-#product {
-    display: flex;
-    flex-direction: column;
-    gap: 7rem;
-
-    width: 100%;
-    height: 100%;
-    border-radius: 0.5rem;
-
-    text-align: center;
-    color: #20252e;
-}
-
-#productImage {
-    border-radius: 0.5rem;
-    width: 100%;
-    height: 20%;
-    object-fit: contain;
-}
-
-#product section {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
+    gap: 2rem;
+    
+    background: none;
+    width: 100%;
+    height: 100%;
+
+    margin: 100px 0;
+}
+
+.productCardContainer hr {
+    border: none;
+    width: 70%;
+    height: 5px;
+    background-color: #22262c;
+    border-radius: 0.5rem;
+}
+
+.productCard {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    border-radius: 0.5rem;
+    height: 500px;
+    width: 90%;
+    margin: 0 5%;
+}
+
+.productCardImage {
+    width: 50%;
+}
+
+#spotifyPlaylist {
+    margin-left: 30px;
+    height: 200px;
+    width: 100%;
+}
+
+.productCardImage img {
+    max-height: 500px;
+
+    border-radius: 0.5rem;
+    object-fit: cover;
+    aspect-ratio: 16/9;
+}
+
+.productCardText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     gap: 1.5rem;
 
     padding-left: clamp(0px, 25px, 50px);
     padding-right: clamp(0px, 25px, 50px);
     padding-bottom: 10px;
 
-    width: 100%;
-    height: 12.5rem;
+    width: 50%;
 }
 
-#product section h3 {
-    font-size: clamp(2.5rem, 3.5vw, 5rem);
+.productCardText h3 {
+    font-size: 3rem;
     font-family: "Cormorant Garamond", serif;
     font-weight: 500;
     font-style: normal;
 }
 
-#product section p {
-    font-size: clamp(0.625rem, 0.9375rem, 1vw);
+.productCardText p {
+    font-size: 2.2rem;
     font-family: "Cormorant Garamond", serif;
     font-weight: 500;
     font-style: normal;
 }
+/**/
 
 /* Contact Styling */
 .contactBlock{
@@ -794,6 +817,22 @@ footer{
 @media (min-width: 805px) {
     #menuBar{
         display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .productCard {
+        flex-direction: column-reverse;
+        gap: 2rem;
+        height: auto;
+    }
+
+    .productCardText{
+        width: 100%;
+    }
+
+    #spotifyPlaylist {
+        margin: 0;
     }
 }
 
