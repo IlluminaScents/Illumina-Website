@@ -401,33 +401,6 @@ body{
     height: auto;
 }
 
-#welcomeText{
-    text-align: center;
-    margin: 0;
-
-    padding-left: 6.25rem;
-    padding-right: 6.25rem;
-    padding-top: 6.25rem;
-
-    color: #f0ece7;
-    font-family: 'Albert Sans', sans-serif;
-    font-size: clamp(1.25rem, 2.5vw + 1rem, 5rem);
-}
-
-#welcomeParagraph{
-    text-align: center;
-    margin: 0;
-
-    padding-left: 3.125rem;
-    padding-right: 3.125rem;
-    padding-top: 0.625rem;
-
-    color: #20252e;
-    font-family: 'Albert Sans', sans-serif;
-    font-size: clamp(0.75rem, 1vw, 0.9375rem);
-    line-height: 2.1;
-}
-
 .image img{
     margin: 0px;
     max-width: 100%;
@@ -527,28 +500,6 @@ body{
 
     border-radius: 0.5rem;
 }
-
-.swiper {
-    width: 100%;
-    height: 600px;
-}
-
-.swiper-slide img {
-    flex: 1 0 100%;
-    scroll-snap-align: start;
-    object-fit: cover;
-
-    width: 100%;
-    height: 100%;
-}
-
-.swiper .swiper-button-prev, .swiper .swiper-button-next {
-    color: #fff;
-}
-
-.swiper .swiper-pagination-bullet-active {
-    background: #fff;
-}
   
 
 /* Footer styles */
@@ -615,9 +566,6 @@ footer{
     justify-content: center;
     text-align: center;
 }
-
-/* Candle Swiper Styles */
-/**/
 
 /* Product Page Styles */
 .productCardContainer {
