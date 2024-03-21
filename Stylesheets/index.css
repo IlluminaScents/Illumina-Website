@@ -120,7 +120,6 @@ body{
     border-radius: 0.5rem;
     width: 100%;
     height: 100%;
-    aspect-ratio: 16/9;
     object-fit: cover;
     object-position: center;
 }
@@ -373,7 +372,7 @@ body{
     font-family: "Cormorant Garamond", serif;
     font-weight: 500;
     font-style: normal;
-    font-size: 1.25rem;
+    font-size: 1.4rem;
     margin-top: 3.125rem;
 }
 
